@@ -1,7 +1,9 @@
 clear all; close all; clc;
 
 file = '..\Data\P3\higado.bmp';
-k = 4;
-
-% watershed1(file, k);
-myWatershed(file, k);
+% Number of interesting points
+k = 6;
+% Set true to show oversegmentation
+plot = false;
+% Apply watershed
+myWatershed(file, k, plot);

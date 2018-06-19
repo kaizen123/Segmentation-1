@@ -4,13 +4,16 @@ function [segmented] = showSegmented( mask, n )
  for x=1:h
     for y=1:w
         for z=1:n
+            % For each class
             if mask(x,y)==z
                 if z<=3
-                    segmented(x,y,z)=255;
+                    % Background
+                    segmented(x,y,z)=200;
                 else
+                    % Foreground
                     segmented(x,y,1)=z*40;
-                    segmented(x,y,2)=z*40;
-                    
+                    segmented(x,y,2)=z*50;
+                    segmented(x,y,3)=z*10;
                 end
             end
         end

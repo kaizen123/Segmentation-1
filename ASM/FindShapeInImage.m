@@ -18,8 +18,8 @@ function TerminateNotContinue=FindShapeInImage(StartShape,P,tEigenValues,W,Conto
 %MnNrmDrvProfiles(level,landmark,mn_nrm_grd_profile)
 %ProfilesCov{level,landmark}
     
-DEBUG=1;
-%DEBUG=0;
+% DEBUG=1;
+DEBUG=0;
 
 ButtonName='Yes';
 def={'1','0','0','0',num2str(3*TrnPntsAbove),num2str(3*TrnPntsBelow),num2str(MaxNumPyramidLevels),'40','3'};
